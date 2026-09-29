@@ -1,1 +1,19 @@
+.workers {
+    display: flex;
+    flex-direction: column;
 
+}
+.worker {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 400px;
+    justify-content: space-between;
+}
+
+h2 {
+    color: red;
+    margin: 0;
+    font-size: 1.2em;
+}
