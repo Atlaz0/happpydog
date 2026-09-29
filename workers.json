@@ -1,0 +1,16 @@
+[
+    {
+      "name": "worker-1",
+      "age": "23",
+      "rating": "5",
+      "pay": "$14",
+      "image": "worker-1.jpg"
+    },
+    {
+      "name": "worker-2",
+      "age": "25",
+      "rating": "4",
+      "pay": "$12",
+      "image": "worker-2.jpg"
+    }
+  ]
