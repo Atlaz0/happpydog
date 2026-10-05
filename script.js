@@ -12,7 +12,15 @@ async function loadWorkers() {
     // for loop to create a new div for each worker and append it to the list
     for (let worker of workers) {
       const newItem = document.createElement("div");
+      let picture = document.createElement("div");
       let name = document.createElement("h2");
+      let raiting = document.createElement("p");
+      let avalibility = document.createElement("p");
+      let location = document.createElement("p");
+      let favorite = document.createElement("div");
+      let pay = document.createElement("h1");
+      let perhour = document.createElement("p");
+
       newItem.className = "worker";
       name.textContent = "hello";
       
