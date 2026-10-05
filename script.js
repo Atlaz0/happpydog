@@ -12,8 +12,11 @@ async function loadWorkers() {
     // for loop to create a new div for each worker and append it to the list
     for (let worker of workers) {
       const newItem = document.createElement("div");
+      let name = document.createElement("h2");
       newItem.className = "worker";
-      newItem.textContent = `Name: ${worker.name}, Age: ${worker.age}, Rating: ${worker.rating}`;
+      name.textContent = "hello";
+      
+      newItem.appendChild(name);
       list.appendChild(newItem);
     }
   } catch (error) {
