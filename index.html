@@ -15,15 +15,17 @@
     <section>
       <section class="topThings">
         <!--arrow icon here-->
-        <img src="" alt="dogPFP"></img>
+        <img src="dog.jpg" alt="dogPFP"></img>
         <section class="topThingsTop">
-          <button id="calender"></button>
-          <h2 id="calenderDate"></h2>
+          <button class="calender" id="calender"><img src="calendar.png"></img></button>
+          <h2 class="calenderDate"></h2>
         </section>
         <section class="topThingsBottom">
           <button id="TimeBtn"></button>
-          <select class="StartTime" id="StartTime"></select>
-          <select class="EndTime" id="EndTime"></select>
+          <div class="time-range">
+            <div class="select-wrap"><select id="start"></select></div>
+            <div class="select-wrap"><select id="end"></select></div>
+          </div>
         </section>
         <section class="topThingsOneAndMultiple">
           <button class="LeftOne" id="LeftOne"></button>
@@ -44,6 +46,8 @@
   <footer>
     <p>Built with ❤️ using HTML & CSS.</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js">
+    
+  </script>               
 </body>
 </html>

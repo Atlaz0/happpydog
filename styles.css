@@ -12,6 +12,89 @@
     justify-content: space-between;
 }
 
+.calender {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #0B91B8;
+}
+
+.calender img {
+  color: white;
+  width: 35px;
+  height: 35px;
+}
+
+.topThings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topThings img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+.topThingsTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+.topThingsBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+  gap: 10px;
+}
+
+.topThingsOneAndMultiple {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+  gap: 10px;
+}
+
+.time-range {
+  display: flex;
+  gap: 10px;
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #d9d9d9;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 8px 40px 8px 14px;
+  font-size: 16px;
+  color: #222;
+  cursor: pointer;
+}
+
+.select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
+
 h2 {
     color: red;
     margin: 0;

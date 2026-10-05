@@ -40,3 +40,39 @@ function addItem() {
 }
 
 loadWorkers();
+
+
+const date = new Date();
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const day = date.getDate();
+
+const getOrdinal = (n) => {
+  const s = ["th", "st", "nd", "rd"];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+};
+
+document.querySelector('.calenderDate').innerText = `${months[date.getMonth()]} ${getOrdinal(day)}`;
+
+
+const start = document.getElementById("start");
+const end = document.getElementById("end");
+
+function fill(select) {
+  for (let m = 0; m < 24 * 60; m += 30) {
+    const h = String(Math.floor(m / 60)).padStart(2, "0");
+    const min = String(m % 60).padStart(2, "0");
+    select.add(new Option(`${h}:${min}`, `${h}:${min}`));
+  }
+}
+fill(start);
+fill(end);
+
+start.value = "09:00";
+end.value = "10:30";
+
+start.addEventListener("change", () => {
+  if (end.value <= start.value) {
+    end.selectedIndex = Math.min(start.selectedIndex + 1, end.options.length - 1);
+  }
+});
